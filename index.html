@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HID Project Sheet Clipper — Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #0a1d30;
+            --card: #102a44;
+            --text: #e8eef5;
+            --muted: #9fb3c8;
+            --accent: #5aa0dd;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 48px 20px;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 40px 44px;
+        }
+
+        h1 { font-size: 24px; margin: 0 0 4px; }
+        .updated { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+        h2 { font-size: 16px; margin: 28px 0 8px; color: var(--accent); }
+        p, li { color: var(--text); font-size: 14.5px; }
+        ul { padding-left: 20px; }
+        a { color: var(--accent); }
+        footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>HID Project Sheet Clipper — Privacy Policy</h1>
+        <p class="updated">Last updated: [DATE]</p>
+
+        <p>HID Project Sheet Clipper is a browser extension that lets a user capture product
+            details, screenshots, and links from websites they visit and save them as items in
+            their organization's HID Projects Portal.</p>
+
+        <h2>What the extension accesses</h2>
+        <p>The extension only accesses information when the user actively uses it. It does not run
+            in the background or monitor browsing.</p>
+        <ul>
+            <li><strong>Page content the user selects:</strong> the specific text, images,
+                screenshots, and the page URL and title the user chooses while using the capture
+                tools.</li>
+            <li><strong>Authentication:</strong> the extension signs the user in through Microsoft
+                Entra ID and receives a short-lived access token to authorize calls to the user's
+                portal.</li>
+        </ul>
+
+        <h2>How information is used</h2>
+        <p>The captured product details, screenshots, and link are sent only to the user's own HID
+            Projects Portal (the address the user configures in the extension's options), solely to
+            create the project item the user requested. The access token is used only to authorize
+            those calls.</p>
+
+        <h2>What the extension does not do</h2>
+        <ul>
+            <li>It does not sell, rent, or share data with any third party.</li>
+            <li>It does not use data for advertising, analytics, or profiling.</li>
+            <li>It does not transmit data to any server other than the user's configured HID
+                Projects Portal and Microsoft's sign-in service.</li>
+            <li>It does not collect browsing history or read pages the user has not acted on.</li>
+        </ul>
+
+        <h2>Storage and retention</h2>
+        <p>The extension stores its configuration (the selected environment and portal URL) locally
+            in the browser. The access token is held only in temporary in-memory session storage and
+            is cleared when the browser closes; no long-lived refresh token or password is stored.
+            Submitted product data resides in the HID Projects Portal, governed by the
+            organization's own data policies.</p>
+
+        <h2>Authentication</h2>
+        <p>Sign-in is handled entirely by Microsoft Entra ID. The extension never sees or stores the
+            user's Microsoft credentials.</p>
+
+        <h2>Changes</h2>
+        <p>This policy may be updated from time to time; material changes will be reflected here with
+            a new "Last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>[Your company] — <a href="mailto:[contact email]">[contact email]</a></p>
+
+        <footer>HID Project Sheet Clipper</footer>
+    </main>
+</body>
+
+</html>
